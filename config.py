@@ -1,3 +1,4 @@
+import os
 import re
 from os import getenv
 # ------------------------------------
@@ -9,43 +10,46 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = getenv("API_ID", "29481920")
-API_HASH = getenv("API_HASH", "f700ddb0930acfab095b00911a2e6f3a")
+API_ID = getenv("API_ID", "")
+API_HASH = getenv("API_HASH", "")
 
 EVAL = list(map(int, getenv("EVAL", "0000000 0000000").split()))
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "NishaxMusic_bot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "")
 # --------------------------------------------------------
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
-DB_NAME = getenv("DB_NAME", "Ahad")
+DB_NAME = getenv("DB_NAME", "")
 #---------------------------------------------------------------
 # ----------------------------------------------------------------
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002740659166))
+LOGGER_ID = int(getenv("LOGGER_ID", ""))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7710841624))
+OWNER_ID = int(getenv("OWNER_ID", "")
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') 
+VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
+API_KEY = getenv("API_KEY", "")
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME","Ivan")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "")
 # ----------------------------------------------------------------
-HEROKU_API_KEY = getenv("HEROKU_API_KEY","HRKU-AAYJPsy5d-9hm-F3qEQ_aUHUYjUnxQRhGM3rCgJbmMBw_____wd9CoymtaHg")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Ahad611/ZyroMusic",
+    "",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -59,8 +63,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Botsxupdate")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/IvanxNisha")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
