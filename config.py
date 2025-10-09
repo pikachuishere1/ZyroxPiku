@@ -10,29 +10,29 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = getenv("API_ID", "")
-API_HASH = getenv("API_HASH", "")
+API_ID = getenv("API_ID", "28659174")
+API_HASH = getenv("API_HASH", "6c485fe78f9248414939671aab6357d8")
 
 EVAL = list(map(int, getenv("EVAL", "0000000 0000000").split()))
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "")
+BOT_USERNAME = getenv("BOT_USERNAME" , "EliviaMusicBot")
 # --------------------------------------------------------
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://escrowertaushif_db_user:e2M7JHynDSSINhN1@cluster0.j2j4wn7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = getenv("DB_NAME", "")
 #---------------------------------------------------------------
 # ----------------------------------------------------------------
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1003022596038"))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "")
+OWNER_ID = int(getenv("OWNER_ID", "7804917014")
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') 
@@ -63,8 +63,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "UrTGmarket")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "Zenxode")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
