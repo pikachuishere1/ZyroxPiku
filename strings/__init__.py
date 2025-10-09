@@ -1,6 +1,6 @@
 import os
 from typing import List
-from strings.init import LOGGER
+from strings import LOGGER
 
 import yaml
 
